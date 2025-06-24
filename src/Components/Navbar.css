@@ -18,7 +18,23 @@
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
+    
 }
+
+.nav-connect, a{
+    text-decoration: none;
+}
+
 .nav-connect:hover{
     transform: scale(1.05);
+}
+
+
+.nav-menu , li , a{
+    list-style: none;
+    color: white;
+}
+
+.nav-menu li a:hover{
+    text-decoration: underline;
 }

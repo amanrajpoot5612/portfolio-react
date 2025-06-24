@@ -17,8 +17,12 @@ const Services = () => {
                 <h2>{services.s_name}</h2>
                 <p>{services.s_desc}</p>
                 <div className="services-readmore">
-                    <p>Read More</p>
+                    <a href={services.s_link} className='read-more-link' target='1'>
+                      <p>
+                      Read More
+                      </p>
                     <img src= {arrow_icon} alt="arrow-icon" />
+                    </a>
                 </div>
                 </div>})}
         </div>

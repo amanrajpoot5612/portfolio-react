@@ -67,3 +67,14 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+
+.read-more-link p{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+}
+
+.read-more-link{
+    display: flex;
+    gap: 0px;
+}

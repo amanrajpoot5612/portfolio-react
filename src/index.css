@@ -4,7 +4,7 @@
 }
 
 body{
-  height: 1000vh;
+  max-height: 1000vh;
   background-color: #161513;
   color: white;
   font-family: 'outfit';

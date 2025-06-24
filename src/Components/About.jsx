@@ -1,10 +1,18 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../assets/theme_pattern.svg';
-import profile_img from '../assets/profile-image.jpg';
+import profile_img from '../assets/profile-image.png';
+import js from '../assets/logos/js.svg';
+import react from '../assets/logos/react.svg';
+import css from '../assets/logos/css.svg';
+import html from '../assets/logos/html.svg';
+import mongodb from '../assets/logos/mongodb.svg';
+import node from '../assets/logos/node.svg';
+import tailwind from '../assets/logos/tailwind.svg';
+
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id='about'>
         <div className="about-title">
             <h1>About Me</h1>
             <img src= {theme_pattern} alt="" />
@@ -15,18 +23,59 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>I've created 10+ projects in which 7 are personal projects and 4 are professional end-to-end projects</p>
-                    <p>Currently in 2nd year of Bachelor of Technology (CS Allied branch)</p>
+                    <p>🎓 4th year B.Tech student (CS Allied branch)</p>
+                    <p>💻 Built 10+ diverse projects — from frontend interfaces to full-stack applications</p>
+                    <p>🧠 Strong in frontend development (React, HTML, CSS)</p>
+                    <p>🔧 Practical experience with backend services and integration</p>
+                    <p>🚀 Notable projects:</p>        
+                    <p>
+                        <ul className='about-project'>
+                            <li>
+                                <p>Nike Landing Page</p>
+                            </li>
+                            <li>
+                                <p>Video Streaming Platform (Frontend + FullStack)</p>
+                            </li>
+                            <li>
+                                <p>Blogging App with Backend as a Service</p>
+                            </li>
+                            <li>
+                                <p>AI Resume Analyzer & Summarizer Extension</p>
+                            </li>
+                            <li>
+                                <p>Snake Game, Quiz App, Webpage Canvas</p>
+                            </li>
+                        </ul>
+                    </p>
                 </div>
-                <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}} /></div>
-                    <div className="about-skill"><p>React JS</p><hr style={{width:"70%"}} /></div>
-                    <div className="about-skill"><p>JavaScript</p><hr style={{width:"60%"}} /></div>
-                    <div className="about-skill"><p>Next JS</p><hr style={{width:"50%"}} /></div>
-             
-                    </div>
-               </div>
+
+            </div>
         </div>
+           <div className="about-skills">
+                    <div className="about-skill"><p>HTML & CSS</p>
+                        <img src= {html} alt="html-logo"  width={100}/>
+                        <img src= {css} alt="css-logo"  width={100}/>
+                    </div>
+                    <div className="about-skill"><p>React JS</p>
+                    <img src= {react} alt="react-logo"  width={100}/>
+                    </div>
+                    <div className="about-skill"><p>JavaScript</p>
+                    <img src= {js} alt="js-logo"  width={100}/>
+                    </div>
+                    <div className="about-skill"><p>MongoDb</p>
+                    <img src= {mongodb} alt="mongodb-logo"  width={100}/>
+                    </div>
+                    <div className="about-skill">Node<p>
+                        <img src= {node} alt="node-logo" width={100}/></p>
+                    </div>
+                    <div className="about-skill">React<p>
+                        <img src= {react} alt="react-logo" width={100}/></p>
+                    </div>
+                    <div className="about-skill">Node<p>
+                        <img src= {tailwind} alt="tailwind-logo" width={100}/></p>
+                    </div>
+            </div>
+
         <div className="about-achievments">
             <div className="about-achievment">
                 <h1>10+</h1>

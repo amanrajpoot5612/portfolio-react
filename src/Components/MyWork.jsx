@@ -11,11 +11,29 @@ const MyWork = () => {
             <img src= {theme_pattern} alt="" />
         </div>
         <div className="mywork-container">
-            {mywork_data.map((work, index) =>{
-                return <>
-                    <img key = {index} src= {work.w_img} alt="" />
-                </>
-            })}
+            {mywork_data.map((work, index) => (
+                <React.Fragment key={index}>
+                    {work.w_img.endsWith(".mp4") ? (
+                     <div className='work-element-gigs'>
+                     <video src={work.w_img} controls autoPlay muted loop />
+                     <button className='work-see-code'>
+                        <a href={work.w_link} target='1'>
+                                    See Code
+                                </a>
+                     </button>
+                     </div>
+                        ) : (
+                            <div className='work-element-gigs'>
+                            <img src={work.w_img} alt="project" />
+                            <button className='work-see-code'>
+                                <a href={work.w_link} target='1'>
+                                    See Code
+                                </a>
+                            </button>
+                            </div>
+                    )}
+                </React.Fragment>
+            ))}
         </div>
         <div className="mywork-showmore">
             <p>Show More</p>

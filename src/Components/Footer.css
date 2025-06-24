@@ -25,6 +25,7 @@
     gap: 30px;
     padding: 20px 30px;
     border-radius: 50px;
+    margin: 20px;
     background: #32323b;
     padding-right: 80px;
 }
@@ -60,4 +61,35 @@
 .footer-subscribe:hover{
     transform: scale(1.1);
     transform: 0.3s;
+}
+
+.footer-top-right{
+    display: flex;
+    flex-direction: column  ;
+}
+
+.footer-input-field{
+    gap: 10px;
+}
+
+.footer-subscribe{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#direct-contact-button{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    font-weight: 700;
 }

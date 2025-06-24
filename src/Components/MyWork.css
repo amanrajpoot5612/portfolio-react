@@ -31,13 +31,32 @@
     height: 280px;
     transition: 0.3s;
     cursor: pointer;
+    margin-bottom: 20px;
 }
+
+.mywork-container video{
+    box-sizing: border-box;
+    width: 419px;
+    height: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 .mywork-container img:hover{
     transform: scale(1.10);
     border: 4px solid #ff00ff;
     border-radius: 10px;
     transition: 0.3s;
 }
+
+.mywork-container video:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
 .mywork-showmore{
     display: flex;
     gap: 15px;
@@ -57,4 +76,26 @@
 .mywork-showmore p{
     font-size: 18px;
     font-weight: 700;
+}
+
+
+
+.work-element-gigs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.work-see-code{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DF8908 10%, #B415FF 100%);
+    font-size: 22px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
 }

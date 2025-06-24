@@ -4,22 +4,24 @@ import theme_pattern from '../assets/theme_pattern.svg';
 import mail_icon from '../assets/mail_icon.svg'
 import call_icon from '../assets/call_icon.svg'
 import location_icon from '../assets/location_icon.svg'
-import { useForm, ValidationError } from '@formspree/react';
+const formId = import.meta.env.VITE_FORM_ID;
+
+// import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
 
-    const [state, handleSubmit] = useForm("meokrwqr");
-     const [showAlert, setShowAlert] = useState(false);
-  useEffect(() => {
-    if (state.succeeded) {
-      setShowAlert(true);
+    // const [state, handleSubmit] = useForm("");
+//      const [showAlert, setShowAlert] = useState(false);
+//   useEffect(() => {
+//     if (state.succeeded) {
+//       setShowAlert(true);
 
-      const timer = setTimeout(() => {
-        setShowAlert(false);
-      }, 2000); // hide after 2 seconds
+//       const timer = setTimeout(() => {
+//         setShowAlert(false);
+//       }, 2000); // hide after 2 seconds
 
-      return () => clearTimeout(timer); // cleanup
-    }
-  }, [state.succeeded]);
+//       return () => clearTimeout(timer); // cleanup
+//     }
+//   }, [state.succeeded]);
 
   return (
     <div className='contact' id='contact'>
@@ -48,32 +50,67 @@ const Contact = () => {
             </div>
 
             <div className="contact-right">
-                 {showAlert && <div className="success-alert">Message sent successfully!</div>}
-                <form action="" method="post" onSubmit={handleSubmit}>
-                    <label htmlFor="name">Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' id='email' />
-                    <br />
-                    <ValidationError 
-                        prefix="Email"
-                        field="email"
-                        errors={state.errors}
-                    />
+  {/* {showAlert && <div className="success-alert">Message sent successfully!</div>} */}
+  
+  <form
+    action={`https://formspree.io/f/${import.meta.env.VITE_FORM_ID}` }
+    method="POST"
+    onSubmit={(e) => {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
 
-                    <label htmlFor="email">Your E-mail</label>
-                    <input type="text" placeholder='Enter your e-mail' name='email'/>
-                    <br />
-                    <label htmlFor="message" id='message-label'>Write your message here</label>
-                    <textarea type="text" placeholder='Enter your message' name='message' id='message' rows={8}/>
-                    <ValidationError 
-                        prefix="Message" 
-                        field="message"
-                        errors={state.errors}
-                    />
-                    <button 
-                    disabled={state.submitting} type='submit' className='contact-submit'>Submit now</button>
-                </form>
-                
-            </div>
+      const name = data.get("name");
+      const email = data.get("email");
+      const message = data.get("message");
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      fetch(`https://formspree.io/f/${import.meta.env.VITE_FORM_ID}`, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((res) => {
+          if (res.ok) {
+            form.reset();
+            setShowAlert(true);
+            setTimeout(() => setShowAlert(false), 2000);
+          } else {
+            alert("Failed to send message.");
+          }
+        })
+        .catch(() => alert("Message sent successfully"));
+    }}
+  >
+    <label htmlFor="name">Your Name</label>
+    <input type="text" placeholder="Enter your name" name="name" id="email" />
+
+    <br />
+
+    <label htmlFor="email">Your E-mail</label>
+    <input type="email" placeholder="Enter your e-mail" name="email" />
+
+    <br />
+
+    <label htmlFor="message" id="message-label">Write your message here</label>
+    <textarea
+      type="text"
+      placeholder="Enter your message"
+      name="message"
+      id="message"
+      rows={8}
+    />
+
+    <button type="submit" className="contact-submit">Submit now</button>
+  </form>
+</div>
+
         </div>
     </div>
   )

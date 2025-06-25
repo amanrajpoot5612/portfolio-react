@@ -13,31 +13,72 @@ const MyWork = () => {
         <div className="mywork-container">
             {mywork_data.map((work, index) => (
                 <React.Fragment key={index}>
-                    {work.w_img.endsWith(".mp4") ? (
-                     <div className='work-element-gigs'>
-                     <video src={work.w_img} controls autoPlay muted loop />
-                     <button className='work-see-code'>
-                        <a href={work.w_link} target='1'>
+                    {work.w_img.endsWith(".mp4") ? 
+                    (
+                        <div className='work-element-gigs'>
+                        <video src={work.w_img} controls autoPlay muted loop className='work-img-vid'/>
+                        <div className="work-buttons">
+
+                            <a href={work.w_code} target='1'>
+                            <button className='work-see-code'>
                                     See Code
-                                </a>
-                     </button>
+                            </button>
+                            </a>
+                            {work.w_link?
+                            <a href={work.w_link} target='1' className='work-see-code-link'>
+                            <button className='work-see-code'>
+                                    Live Link
+                            </button>
+                            </a>
+                            :
+                                null
+                        }
+
+                        </div>
+                            {/* <a href={work.w_link} target='1'>
+                            <button className='work-see-code'>
+                                    See Code
+                            </button>
+                            </a> */}
                      </div>
                         ) : (
                             <div className='work-element-gigs'>
-                            <img src={work.w_img} alt="project" />
+                            <img src={work.w_img} alt="project" className='work-img-vid'/>
+                            <div className="work-buttons">
+
+                                <a href={work.w_code} target='1'>
                             <button className='work-see-code'>
-                                <a href={work.w_link} target='1'>
+                                {/* <a href={work.w_link} target='1'> */}
                                     See Code
-                                </a>
+                                {/* </a> */}
                             </button>
+                            </a>
+                            {work.w_link?
+                            <a href={work.w_link} target='1' className='work-see-code-link'>
+                            <button className='work-see-code'>
+                                    Live Link
+                            </button>
+                            </a>
+                            :
+                                null
+                        }
+
+                            </div>
+                            {/* <a href={work.w_link} target='1'>
+                            <button className='work-see-code'>
+                                    Live Link
+                            </button>
+                            </a> */}
                             </div>
                     )}
                 </React.Fragment>
             ))}
         </div>
         <div className="mywork-showmore">
-            <p>Show More</p>
-            <img src= {arrow_icon} alt="" />
+            <p>
+                <a href="https://github.com/amanrajpoot5612" target='1'>Show More</a>
+            </p>
+            <img src= {arrow_icon} alt="arrow icon" />
         </div>
     </div>
   )

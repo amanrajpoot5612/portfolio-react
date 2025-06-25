@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="footer-top">
             <div className="footer-top-left">
                 <img src= {logo} alt="footer-logo" width={150} />
-                <p>I'm Frontend developer + FullStack Developer, Started my journey 1 year back in 2023, created 10+ projects</p>
+                <p>I'm Frontend developer + FullStack Developer, Started my journey 2 years back in 2023, created 10+ projects</p>
             </div>
             <div className="footer-top-right">
                 <h1>Contact directly by sending a mail</h1>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <input type="email" placeholder='Enter your email'name='emailOpen' id='emailOpen'value={email} onChange={(e)=> setEmail(e.target.value)}/>
                 </div>
                 <div className="footer-subscribe">
-                    <button onClick={mailOpenService} id='direct-contact-button'>Subscribe</button>
+                    <button onClick={mailOpenService} id='direct-contact-button'>Connect on Mail</button>
                     {/* <a href="mailto:test@example.com?subject=Test&body=This is a test" target="_blank" rel="noopener noreferrer">
   Test Mail Link
 </a> */}

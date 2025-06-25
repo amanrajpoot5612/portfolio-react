@@ -88,8 +88,19 @@
 #direct-contact-button{
     background: transparent;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     padding: 5px;
     font-weight: 700;
+}
+
+.footer-email-input input{
+    background: transparent;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* match background */
+  -webkit-text-fill-color: white !important; /* match text color */
+  caret-color: white;
+  transition: background-color 5000s ease-in-out 0s;
 }

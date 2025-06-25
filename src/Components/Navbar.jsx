@@ -26,7 +26,7 @@ const Navbar = () => {
             <li><a href="#about">About Me</a></li>
             <li><a href="#services">Offerings</a></li>
             <li><a href="
-              https://drive.google.com/file/d/1z-83SB2zIcLIMSnH46V1aJhRL5Duztpf/view?usp=drivesdk
+              https://drive.google.com/drive/folders/1RMXo6bTugQC7jpXAcD3oL8VuKU52nKij?usp=drive_link
               " target='1'>Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>

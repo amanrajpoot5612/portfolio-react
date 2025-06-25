@@ -14,7 +14,7 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className="hero-resume"><a href="
-              https://drive.google.com/file/d/1z-83SB2zIcLIMSnH46V1aJhRL5Duztpf/view?usp=drivesdk
+              https://drive.google.com/drive/folders/1RMXo6bTugQC7jpXAcD3oL8VuKU52nKij?usp=drive_link
               " target='1'>
                     My resume
                 </a>

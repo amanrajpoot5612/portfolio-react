@@ -18,14 +18,14 @@ const mywork_data = [
         w_name:"Portfolio Website using HTML, CSS & JS",
         w_img:project2_img,
         w_code:"https://github.com/amanrajpoot5612/personal-portfolio",
-        w_link: "https://amanrajpoot.vercel.app/"
+        w_link: "https://amanrajpoot5612.github.io/personal-portfolio/"
     },
     {
         w_no:3,
         w_name:"Chrome Extension (Text Translation and summmarization)",
         w_img:project3_img,
         w_code:"https://github.com/amanrajpoot5612/translate-and-speech-extension",
-        w_link: "https://amanrajpoot.vercel.app/"
+        w_link: ""
     },
     {
         w_no:4,

@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul className="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Offerings</a></li>
             <li><a href="
               https://drive.google.com/file/d/1z-83SB2zIcLIMSnH46V1aJhRL5Duztpf/view?usp=drivesdk
               " target='1'>Resume</a></li>

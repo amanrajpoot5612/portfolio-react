@@ -28,7 +28,7 @@ const Footer = () => {
                 <h1>Contact directly by sending a mail</h1>
                 <div className="footer-input-field">
                     <div className="footer-email-input">
-                <img src= {user_icon} alt="" />
+                <img src= {user_icon} alt="" /> 
                 <input type="email" placeholder='Enter your email'name='emailOpen' id='emailOpen'value={email} onChange={(e)=> setEmail(e.target.value)}/>
                 </div>
                 <div className="footer-subscribe">

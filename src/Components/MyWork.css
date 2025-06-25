@@ -175,3 +175,47 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+
+
+@media (max-width: 480px) {
+    .mywork{
+        margin: 20px 10px;
+        gap: 40px;
+
+    }
+    .mywork-title{
+        text-align: center;
+    }
+    .mywork-title h1{
+        font-size: 50px;
+    }
+    .mywork-title img{
+        width: 50%;
+        height: 70%;
+        position: relative;
+        top: -100px;
+        bottom: 0;
+        right: 0;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mywork-container img, .mywork-container video{
+        width: 100%;
+        height: auto;
+    }
+    .mywork-showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .mywork-container{
+        max-width: 90%;
+        gap: 50px;
+    }
+    .mywork-container button{
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 20px;
+    }
+}

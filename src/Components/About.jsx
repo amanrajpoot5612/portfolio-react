@@ -23,11 +23,11 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>🎓 4th year B.Tech student (CS Allied branch)</p>
-                    <p>💻 Built 10+ diverse projects — from frontend interfaces to full-stack applications</p>
-                    <p>🧠 Strong in frontend development (React, HTML, CSS)</p>
-                    <p>🔧 Practical experience with backend services and integration</p>
-                    <p>🚀 Notable projects:</p>        
+                    <p><span>🎓&nbsp;&nbsp;</span> 4th year B.Tech student (CS Allied branch)</p>
+                    <p><span>💻&nbsp;&nbsp;</span> Built 10+ diverse projects — from frontend interfaces to full-stack applications</p>
+                    <p><span>🧠&nbsp;&nbsp;</span> Strong in frontend development (React, HTML, CSS)</p>
+                    <p><span>🔧&nbsp;&nbsp;</span> Practical experience with backend services and integration</p>
+                    <p><span>🚀&nbsp;&nbsp;</span> Notable projects:</p>        
                     <p>
                         <ul className='about-project'>
                             <li>
@@ -79,7 +79,7 @@ const About = () => {
         <div className="about-achievments">
             <div className="about-achievment">
                 <h1>10+</h1>
-                <p>Perosnal projects</p>
+                <p>Personal projects</p>
             </div><hr />
             <div className="about-achievment">
                 <h1>3+</h1>

@@ -28,7 +28,7 @@ const About = () => {
                     <p><span>🧠&nbsp;&nbsp;</span> Strong in frontend development (React, HTML, CSS)</p>
                     <p><span>🔧&nbsp;&nbsp;</span> Practical experience with backend services and integration</p>
                     <p><span>🚀&nbsp;&nbsp;</span> Notable projects:</p>        
-                    <p>
+                    <p id='projects-name-about'>
                         <ul className='about-project'>
                             <li>
                                 <p>Nike Landing Page</p>

@@ -4,7 +4,10 @@
     justify-content: space-around;
     margin: 20px 170px;
     align-items: center;
-
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 .nav-menu{
     display: flex;
@@ -98,4 +101,42 @@ background-color: rgba(0, 0, 0, 0.4);
 
 .nav-connect{
     padding: 13px 20px;
+}
+
+
+@media screen and (max-width: 1004px) {
+    .navbar {
+        margin: 0 20px;
+        padding: 10px 0;
+        gap: 0px;
+        /* justify-content: space-between; */
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 20px;
+        order: 3;
+        position: absolute;
+        right: -500px;
+    }
+    .nav-connect {
+        width: 20%;
+        text-align: center;
+    }
+    
+}
+
+
+@media (max-width: 480px){
+    .navbar{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav-connect{
+        width: 80%;
+    }
+    
 }

@@ -10,6 +10,37 @@ body{
   font-family: 'outfit';
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* regular scrollbar */
+}
+
+body > div::-webkit-scrollbar {
+  display: none; /* hide nested ones if any */
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
 html {
   scroll-behavior: smooth;
 }

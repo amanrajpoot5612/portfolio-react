@@ -78,3 +78,16 @@
     display: flex;
     gap: 0px;
 }
+
+@media (max-width:1004px){
+    .services-container{
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .services-format{
+        width: 100%;
+        max-width: 100%;
+    }
+}

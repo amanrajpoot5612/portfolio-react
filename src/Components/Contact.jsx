@@ -89,12 +89,12 @@ const Contact = () => {
     }}
   >
     <label htmlFor="name">Your Name</label>
-    <input type="text" placeholder="Enter your name" name="name" id="email" />
+    <input type="text" placeholder="Enter your name" name="name" id="email" required= "true"/>
 
     <br />
 
     <label htmlFor="email">Your E-mail</label>
-    <input type="email" placeholder="Enter your e-mail" name="email" />
+    <input type="email" placeholder="Enter your e-mail" name="email"  required= "true"/>
 
     <br />
 
@@ -104,6 +104,7 @@ const Contact = () => {
       placeholder="Enter your message"
       name="message"
       id="message"
+       required= "true"
       rows={8}
     />
 

@@ -32,6 +32,18 @@ body > div::-webkit-scrollbar {
   display: none; /* hide nested ones if any */
 } 
 
+input {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+input {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
 * {
   box-sizing: border-box;
 }

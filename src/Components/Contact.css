@@ -125,3 +125,40 @@
   border-radius: 5px;
   text-align: center;
 }
+
+
+@media (max-width: 480px){
+    .contact{
+        margin: 80px 20px;
+    }
+    .contact-title img{
+        position: absolute;
+
+    }
+    .contact-title{
+        text-align: center;
+    }
+    .contact-title h1{
+        font-size: 50px;
+    }
+    .contact-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .contact-left, .contact-right{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left h1, .contact-right label{
+        font-size: 40px;
+    }
+    .contact-left p, .contact-details, .contact-right input, .contact-right textarea{
+        font-size: 18px;
+        max-width: 100%;
+    }
+    .contact-right input, .contact-right textarea{
+        width: 90%;
+    }
+}

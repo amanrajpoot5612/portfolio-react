@@ -20,7 +20,7 @@ const Navbar = () => {
 
     <>
     <div className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-        <img src= {logo_bg} alt="logo" width={130} id='logo'/>
+        <a href='#home'><img src= {logo_bg} alt="logo" width={130} id='logo'/></a>
         <ul className="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>

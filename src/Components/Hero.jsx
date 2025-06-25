@@ -3,7 +3,7 @@ import './Hero.css';
 import profile_img from '../assets/profile-image.png';
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='home'>
             <img src={profile_img} alt="" width={300} style={{borderRadius:"100%"}}/>
             <h1><span>I'm Aman Rajpoot</span>, a frontend developer with a solid foundation in backend development through real-world projects.</h1>
             <p>Began my journey in 2023 and have developed 10+ projects across frontend and full-stack domains.</p>

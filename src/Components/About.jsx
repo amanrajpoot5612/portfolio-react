@@ -9,7 +9,7 @@ import html from '../assets/logos/html.svg';
 import mongodb from '../assets/logos/mongodb.svg';
 import node from '../assets/logos/node.svg';
 import tailwind from '../assets/logos/tailwind.svg';
-
+import github from '../assets/logos/github.png'
 const About = () => {
   return (
     <div className='about' id='about'>
@@ -74,6 +74,10 @@ const About = () => {
                     <div className="about-skill">Node<p>
                         <img src= {tailwind} alt="tailwind-logo" width={100}/></p>
                     </div>
+                    <div className="about-skill">Node<p>
+                        <img src= {github} alt="github-logo" width={100}/></p>
+                    </div>
+                    
             </div>
 
         <div className="about-achievments">

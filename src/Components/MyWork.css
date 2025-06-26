@@ -175,11 +175,127 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+.work-element-gigs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: space-between;
+    }
+
+.work-element-gigs img, .work-element-gigs video{
+    width: 100%;
+    max-width: 100%;
+    min-height: 80%;
+}
+@media (max-width: 1252px){
+    .mywork{
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 10px;
+        gap: 40px;
+    }
+    .mywork-title{
+        text-align: center;
+    }
+    .mywork-title h1{
+        font-size: 70px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mywork-container img, .mywork-container video{
+        width: 100%;
+        height: auto;
+    }
+    .mywork-showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .work-element-gigs{
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mywork{
+        width: 100%;
+        max-width: 100%;
+        margin: 0px ;
+        /* margin: 20px 10px; */
+        gap: 40px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        place-items: center;
+    }
+    .work-element-gigs{
+        place-items: center;
+    }
+    .mywork-title{
+        text-align: center;
+    }
+    .mywork-title h1{
+        font-size: 60px;
+    }
+    .work-element-gigs img{
+        width: 100%;
+    }
+    .mywork-container button{
+        height: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .mywork-showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .mywork{
+        margin: 0px 20px;
+    }
+    
+}
+
+@media (max-width: 706px) {
+    .mywork{
+        width: 100%;
+        max-width: 100%;
+        margin: 0px ;
+        /* margin: 20px 10px; */
+        gap: 40px;
+    }
+    .mywork-title{
+        text-align: center;
+    }
+    .mywork-title h1{
+        font-size: 50px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+    }
+    .work-element-gigs{
+        place-items: center;
+        width: 80%;
+    }
+    .mywork-container img, .mywork-container video{
+        width: 90%;
+        height: auto;
+    }
+    .mywork-showmore{
+        padding: 17px 32px;
+        font-size: 18px;
+    }
+}
 
 
 @media (max-width: 480px) {
     .mywork{
-        margin: 20px 10px;
+        width: 100%;
+        max-width: 100%;
+        /* margin: 20px 10px; */
         gap: 40px;
 
     }

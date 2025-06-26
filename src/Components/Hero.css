@@ -60,6 +60,29 @@
     border-color: #B415FF;
 }
 
+@media (max-width: 768px){
+    .hero{
+        padding-top: 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .hero img{
+        width: 50%;
+        height: auto;
+    }
+    .hero h1{
+        width: 90%;
+        font-size: 40px;
+    }
+    .hero p{
+        width: 90%;
+        font-size: 22px;
+    }
+    .hero-action{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 480px){
     .hero{
         padding-top: 30%;

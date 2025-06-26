@@ -126,6 +126,153 @@
   text-align: center;
 }
 
+.contact{
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.contact-section{
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.contact{
+        /* margin: 80px 50px; */
+        margin-top: 70px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 20px;
+    }
+
+@media (max-width: 1224px){
+    .contact{
+        margin: 80px 100px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+    .contact-title h1{
+        font-size: 50px;
+    }
+    .contact-section{
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .query-from label{
+        /* padding-right: 0; */
+        /* padding-bottom: 0; */
+        /* font-size: 20px; */
+    }
+    .contact-left, .contact-right{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left h1, .contact-right label{
+        font-size: 20px;
+    }
+    .contact-left p, .contact-details, .contact-right input, .contact-right textarea{
+        font-size: 18px;
+        max-width: 80%;
+    }
+    #message{
+        /* max-width: 90%; */
+        /* padding: 30; */
+        /* width: 100%; */
+        align-self: flex-end;
+    }
+    #message-label{
+        display: block; /* Ensures the label takes up the full width */
+        margin-bottom: 10px; /* Adds space between the label and textarea */
+        font-size: 18px; /* Adjusts the font size of the label */
+    }
+    #message{
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1024px){
+    .contact{
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.contact-section{
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+  .contact-title h1{
+        font-size: 70px;
+    }
+    .contact-section{
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+    .contact-left, .contact-right{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left h1, .contact-right label{
+        font-size: 25;
+    }
+    .contact-section{
+        flex-direction: row;
+        align-items: start;
+        gap: 50px;
+    }
+    .contact-left p, .contact-details, .contact-right input, .contact-right textarea{
+        font-size: 18px;
+        max-width: 80%;
+    }
+    .contact-right input, .contact-right textarea{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .contact{
+        /* margin: 80px 50px; */
+        margin-top: 70px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 20px;
+    }
+    .contact-title h1{
+        font-size: 60px;
+    }
+    .query-from{
+        align-items: center;
+        text-align: center;
+    }
+    .contact-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .contact-left, .contact-right{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-left h1, .contact-right label{
+        font-size: 25px;
+    }
+    .contact-left p, .contact-details, .contact-right input, .contact-right textarea{
+        font-size: 22px;
+        max-width: 80%;
+    }
+}
+
 
 @media (max-width: 480px){
     .contact{
@@ -152,7 +299,7 @@
         text-align: center;
     }
     .contact-left h1, .contact-right label{
-        font-size: 40px;
+        font-size:20px;
     }
     .contact-left p, .contact-details, .contact-right input, .contact-right textarea{
         font-size: 18px;

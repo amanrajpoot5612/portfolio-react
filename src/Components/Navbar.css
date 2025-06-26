@@ -106,9 +106,11 @@ background-color: rgba(0, 0, 0, 0.4);
 
 @media screen and (max-width: 1004px) {
     .navbar {
-        margin: 0 20px;
+        /* margin: 0 20px; */
         padding: 10px 0;
         gap: 0px;
+        justify-content: space-between;
+        padding-right: 20px;
         /* justify-content: space-between; */
     }
     .nav-menu {
@@ -126,6 +128,33 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 
+@media (max-width: 769px) {
+    ul , li , a {
+        font-size: 20px;
+    }
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        /* padding: 10px 0; */
+        justify-content: space-between;
+        margin-left: 0;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        order: 2;
+        position: absolute;
+        right: -500px;
+    }
+    .nav-connect {
+        width: 30%;
+        text-align: center;
+    }
+    
+}
+
+
+
 @media (max-width: 480px){
     .navbar{
         width: 100%;
@@ -134,9 +163,21 @@ background-color: rgba(0, 0, 0, 0.4);
         margin: 0;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
+
     .nav-connect{
-        width: 80%;
+        width: 40%;
+        /* padding: 20px; */
+        /* margin-top: 20px; */
+        height: 40%;
+    }
+     .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        order: 2;
+        position: absolute;
+        right: -500px;
     }
     
 }

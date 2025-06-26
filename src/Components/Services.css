@@ -79,11 +79,22 @@
     gap: 0px;
 }
 
-@media (max-width:1004px){
-    .services-container{
+@media (max-width: 1224px){
+    .services{
         width: 100%;
         max-width: 100%;
-        grid-template-columns: 1fr;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .services-container{
+        width: 80%;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
     .services-format{
@@ -91,6 +102,54 @@
         max-width: 100%;
     }
 }
+
+@media (max-width:1004px){
+    .services-container{
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+         place-items: center;
+    }
+    .services-format{
+        width: 100%;
+        max-width: 100%;
+        width: 70%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .services{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .services-title h1{
+        font-size: 60px;
+    }
+    .services-title img{
+        width: 80%;
+        height: 80%;
+        /* position: relative; */
+        bottom: 0;
+        right: 0;
+    }
+    .services-container{
+        width: 90%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 @media (max-width: 480px){
     .services{

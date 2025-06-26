@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
 });
 
   return (
-    <div>
+    <div className='app'>
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>

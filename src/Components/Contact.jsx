@@ -52,7 +52,7 @@ const Contact = () => {
             <div className="contact-right">
   {/* {showAlert && <div className="success-alert">Message sent successfully!</div>} */}
   
-  <form
+  <form className='query-from'
     action={`https://formspree.io/f/${import.meta.env.VITE_FORM_ID}` }
     method="POST"
     onSubmit={(e) => {
@@ -89,7 +89,7 @@ const Contact = () => {
     }}
   >
     <label htmlFor="name">Your Name</label>
-    <input type="text" placeholder="Enter your name" name="name" id="email" required= "true"/>
+    <input type="text" placeholder="Enter your name" name="name" id="name" required= "true"/>
 
     <br />
 

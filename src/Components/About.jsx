@@ -52,8 +52,10 @@ const About = () => {
             </div>
         </div>
            <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS</p>
+                    <div className="about-skill"><p>HTML</p>
                         <img src= {html} alt="html-logo"  width={100}/>
+                    </div>
+                    <div className="about-skill"><p>CSS</p>
                         <img src= {css} alt="css-logo"  width={100}/>
                     </div>
                     <div className="about-skill"><p>React JS</p>
